@@ -1,0 +1,4 @@
+"server.js" is the main file.
+The folder "DB" contains "Movie.js" file which contains the schema of the movie. -> DB/Movie.js
+It also contains "connection.js" which is used for providing connectivity of NodeJS with MongoDB. -> DB/connection.js
+The "API" folder contains "Movie.js" file which is used for performing CRUD Operations with MongoDB. -> API/Movie.js
