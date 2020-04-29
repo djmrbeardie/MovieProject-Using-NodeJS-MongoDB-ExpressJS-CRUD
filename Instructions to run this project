@@ -1,0 +1,44 @@
+Steps to run this project: 
+
+1. Open the terminal.
+2. type "npm start" or "npm run server" which will run the server.js using nodemon.
+    It will start the server and connect to mongodb.
+3. For performing CRUD operations:
+    > Open POSTMAN
+    > GET Operation: Enter the URL: "http://localhost:3000/api/movieModel" to perform GET the movies added to the mongodb.
+    > POST Operation: To add movies:
+                Select POST
+                Enter the URL: "http://localhost:3000/api/movieModel"
+                Select Body > raw > JSON
+                In the Body, enter movie data. 
+                    Eg. {
+	                          "name" : "Hate Story",
+                          	"img" : "http", 
+	                          "summary" : "data about movie"
+                         
+                        }
+                Click on send.
+    > PUSH Operation by using ID: To update the data
+              Select PUSH
+              Enter the URL: "http://localhost:3000/api/movieModel/movie_id_generated"
+                    where movie_id_generated will be the _id Eg. "5ea958b1c6742e8d62549fd8"
+              Select Body > raw > JSON
+                In the Body, enter movie data. 
+                    Eg. {
+	                          "name" : "Hate Story",
+                          	"img" : "http", 
+	                          "summary" : "data about movie"
+                         
+                        }
+                Click on send.
+     > DELETE Operation by using ID: To delete record or movie.
+               Select DELETE
+               Enter the URL: "http://localhost:3000/api/movieModel/movie_id_generated"
+                    where movie_id_generated will be the _id Eg. "5ea958b1c6742e8d62549fd8"
+               Click on send.
+              
+4. To display the data on the web browser:
+        Enter the URL: "http://localhost:3000/api/movieModel" or "http://localhost:3000"
+              
+	
+    
